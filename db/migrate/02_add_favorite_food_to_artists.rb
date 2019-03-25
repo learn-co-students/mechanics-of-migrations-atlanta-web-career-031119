@@ -1,4 +1,4 @@
-class AddFavoriteFoodToArtists < ActiveRecord[4.2]::Base
+class AddFavoriteFoodToArtists < ActiveRecord::Base
     def change
         add_column :artists, :favorite_food, :string
     end
