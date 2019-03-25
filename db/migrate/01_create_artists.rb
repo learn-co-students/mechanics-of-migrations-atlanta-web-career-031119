@@ -1,4 +1,4 @@
-class CreateArtists < ActiveRecord::Migration
+class CreateArtists < ActiveRecord::Migration[4.2]
     def up
     end
 
@@ -13,6 +13,7 @@ class CreateArtists < ActiveRecord::Migration
             age INTEGER,
             hometown TEXT
         )
+        SQL
     ActiveRecord::Base.connection.execute(sql)
 
     def change
